@@ -1,0 +1,68 @@
+package com.aungnaioo;
+
+class Array {
+	
+	int length = 0;
+	private int intArray[] = null;
+	private int intArrayCount = 0;
+	
+	public Array(int length) {
+		this.length = length;
+	}
+	
+	private void createIntArray() {
+		intArray = new int[length];
+	}
+	
+	public void insert(int item) {
+		
+		if(intArray == null) {			
+			createIntArray();
+		}
+		
+		if(intArrayCount == intArray.length) {
+			
+			int[] newIntArray = new int[length*2];
+			for (int i = 0; i < length; i++) {
+				newIntArray[i] = intArray[i];
+			}
+			
+			intArray = newIntArray;
+		}
+		
+		intArray [intArrayCount++] = item;
+		length = intArrayCount+1;
+	}
+	
+	public void print() {
+		
+		int count = 0;
+		System.out.print("[");
+		for (int item: intArray) {
+			System.out.print(item);
+			count++;
+			if(count==intArrayCount) {
+				break;
+			}
+			System.out.print(", ");
+		}
+		
+		System.out.print("]");
+		
+	}
+	
+}
+
+public class Building_Array {
+
+	public static void main(String[] args) {
+		Array numbers = new Array(3);
+		numbers.insert(10);
+		numbers.insert(20);
+		numbers.insert(30);
+		numbers.insert(40);
+		numbers.print();
+		System.out.println(numbers.newLength);
+	}
+	
+}

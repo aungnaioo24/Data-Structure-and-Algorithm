@@ -1,0 +1,29 @@
+
+public class BigO_2 {
+
+	public void log(int[] numbers) {
+		
+		// O(n)
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.println(numbers[i]);
+		}
+		
+		// We can tell this as O(1+n+1), O(2+n)
+		// Since 'n' can be million of times, we can also tell this as O(n).
+		// +2 doesn't matter when n is large 
+		System.out.println(); // O(1)
+		for (int number: numbers) { // O(n)
+			System.out.println();
+		}
+		System.out.println(); // O(1)
+		
+		
+		for (int number: numbers) // O(n)
+			System.out.println();
+
+		for (int number: numbers) // O(n)
+			System.out.println();
+		
+	}
+	
+}

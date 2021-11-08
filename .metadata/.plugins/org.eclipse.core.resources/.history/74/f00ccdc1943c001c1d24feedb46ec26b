@@ -1,0 +1,12 @@
+package com.aungnaioo.stacknqueue;
+
+import java.util.Stack;
+
+public class StacksRFun {
+
+	public static void main(String[] args) {
+		// Stack => First in First Out
+		Stack games = new Stack();
+		
+	}
+}

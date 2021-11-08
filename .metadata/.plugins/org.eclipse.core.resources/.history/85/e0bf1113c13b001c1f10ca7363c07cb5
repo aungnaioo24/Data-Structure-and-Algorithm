@@ -1,0 +1,14 @@
+package com.aungnaioo;
+
+public class DynamicArray {
+
+	public static void main(String[] args) {
+		
+		// Vector: extends size by 100% - synchronized (one thread can run at a time) 
+		// ArrayList: 50%
+		
+		
+		
+	}
+	
+}

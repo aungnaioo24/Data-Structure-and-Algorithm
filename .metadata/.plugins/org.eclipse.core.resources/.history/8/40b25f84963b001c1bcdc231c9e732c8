@@ -1,0 +1,14 @@
+
+public class Big_O_twice {
+
+	public void log(int[] numbers) {
+		
+		// O(n*n), O(n^2)
+		// Quadratic growth
+		for(int first: numbers) // O(n)
+			for(int second: numbers) // O(n)
+				System.out.println(first+", "+second);
+		
+	}
+	
+}

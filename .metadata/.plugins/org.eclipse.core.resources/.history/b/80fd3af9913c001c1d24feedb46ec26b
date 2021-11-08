@@ -1,0 +1,34 @@
+package com.aungnaioo.stacknqueue;
+
+public class Stack {
+
+	private int stack[];
+	private int size;
+	private static final int INITITAL_SIZE = 10;
+	
+	public Stack() {
+		stack = new int[INITITAL_SIZE];
+		size = 0;	
+	}
+	
+	private void push(int value) {
+		if(size == stack.length) {
+			doubleCapacity();
+		}
+		
+		stack[size]  = value;
+		size++;
+	}
+	
+	private void doubleCapacity() {
+		int newCapacity = 2*stack.length;
+		int[] newStack = new int[newCapacity];
+		
+		for(int i=0; i<stack.length; i++) {
+			newStack[i] = stack[i];
+		}
+		
+		stack = newStack;
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.aungnaioo;
+
+public class DynamicArray {
+
+	public static void main(String[] args) {
+		
+		System.out.println();
+		
+	}
+	
+}

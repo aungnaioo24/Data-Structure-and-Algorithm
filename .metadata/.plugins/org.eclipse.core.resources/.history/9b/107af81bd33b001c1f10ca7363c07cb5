@@ -1,0 +1,8 @@
+package com.aungnaioo;
+
+public class Node {
+
+	private int value;
+	private Node next;
+	
+}

@@ -1,0 +1,10 @@
+
+public class BigO_1 {
+
+	public void log(int[] numbers) {
+		
+		System.out.println(numbers[0]);
+		
+	}
+	
+}

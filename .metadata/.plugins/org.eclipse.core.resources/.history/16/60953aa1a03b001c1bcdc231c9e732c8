@@ -1,0 +1,26 @@
+package com.aungnaioo;
+
+class Array {
+	
+	int length = 0;
+	
+	public Array(int length) {
+		this.length = length;
+	}
+	
+	public void insert(int item) {
+		
+	}
+	
+}
+
+public class Building_Array {
+
+	public static void main(String[] args) {
+		Array numbers = new Array(3);
+		numbers.insert(10);
+		numbers.insert(20);
+		numbers.insert(30);
+	}
+	
+}

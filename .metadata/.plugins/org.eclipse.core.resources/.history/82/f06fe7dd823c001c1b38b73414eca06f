@@ -1,0 +1,14 @@
+package com.aungnaioo.stacknqueue;
+
+public class StacksRFun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Stack => First in First Out
+		
+		
+		
+	}
+
+}

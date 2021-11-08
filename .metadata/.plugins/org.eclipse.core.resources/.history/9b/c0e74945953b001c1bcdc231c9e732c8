@@ -1,0 +1,12 @@
+
+public class Big_O_twice {
+
+	public void log(int[] numbers) {
+		
+		for(int first: numbers)
+			for(int second: numbers)
+				System.out.println(first+", "+second);
+		
+	}
+	
+}
